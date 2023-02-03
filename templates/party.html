@@ -1,0 +1,10 @@
+<title>Etusivu</title>
+<h1>Members of your party</h1>
+<p>
+<ul>
+    {% for hahmo in hahmot %}
+    <li>{{hahmo}}
+    {% endfor %}
+</ul>
+<a href="/newC">Add a new memeber</a>
+<a href="/removeC">Remove a memeber</a>

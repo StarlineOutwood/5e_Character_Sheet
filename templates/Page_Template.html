@@ -1,0 +1,45 @@
+<title>Etusivu</title>
+<h1>5th Edition Character Sheet</h1>
+<p>{{ message }}</p>
+
+<form action="/info" method="POST">
+    Name:
+    <p>
+    <input type="text" name="name">
+    <p>
+    Race:
+    <p>
+    <input type="radio" name="race" value="1"> Elf
+    <input type="radio" name="race" value="2"> Half-Elf
+    <input type="radio" name="race" value="3"> Human
+    <input type="radio" name="race" value="4"> Tiefling
+    <input type="radio" name="race" value="5"> Changeling
+    <input type="radio" name="race" value="6"> Halfling
+    <input type="radio" name="race" value="7"> Dwarf
+    <input type="radio" name="race" value="8"> Dragonborn
+    <input type="radio" name="race" value="9"> Gnome
+    <p>
+    Class:
+    <p>
+    <input type="radio" name="Class" value="1"> Monk
+    <input type="radio" name="Class" value="2"> Barbarian
+    <input type="radio" name="Class" value="3"> Fighter
+    <input type="radio" name="Class" value="4"> Sorcerer
+    <input type="radio" name="Class" value="5"> Warlock
+    <input type="radio" name="Class" value="6"> Wizard
+    <input type="radio" name="Class" value="7"> Druid
+    <input type="radio" name="Class" value="8"> Ranger
+    <input type="radio" name="Class" value="9"> Paladdin
+    <input type="radio" name="Class" value="10"> Cleric
+    <input type="radio" name="Class" value="11"> Blood Hunter
+    <input type="radio" name="Class" value="12"> Artificer
+    <input type="radio" name="Class" value="13"> Rogue
+    <p>
+    Level:
+    <p>
+    <input type="text" name="level" value="1">
+    <p>
+    <br>
+    <input type="submit" value="Create new character">
+    </form>
+    
