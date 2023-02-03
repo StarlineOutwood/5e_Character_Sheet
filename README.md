@@ -1,6 +1,8 @@
 # 5e_Character_Sheet
 Character sheet based on 5th edition Dungeons and Dragons rules.
 
+At the moment you can add a character with a name, race, class and level to a database. I am working on removing a character and adding a database with all the information about already excisting races and classes. I had a lot of technical problems to get started, so I am not exactly at where I would want to be, but im sure it will get better from here.
+
 When this project is ready, you should be able to:
 
 1. Create a character
