@@ -1,0 +1,11 @@
+<h>Choose skills</h>
+Next, choose your skills to be proficient at. based on your class, you can choose {{skills_n}} skills.
+
+<form action="/add", method="POST">
+    <ul>
+        {%for skill in skills%}
+        <input type="chekcbox", name = "skill", value = {{skill}}> {{skill}}
+        {%endfor%}
+    </ul>
+    <input type="submit" value="Next step">
+</form>

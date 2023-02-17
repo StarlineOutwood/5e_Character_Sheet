@@ -1,7 +1,12 @@
-<form action="/remove", method = "POST"></form>
-Who gets kicked out? now
+<form action="/remove", method = "POST">
+Who gets kicked out?
 <br>
-<input type="text" name="poistettava" value="">
+<ul>
+    {% for name in names %}
+    <input type="checkbox" name="poistettava" value={{name[0]}}> {{name[0]}}, {{name[1]}}
+    <br>
+    {% endfor %}
+</ul>
 <br>
 <input type="submit" value="Remove">
 </form>

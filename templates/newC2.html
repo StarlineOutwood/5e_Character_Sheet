@@ -1,0 +1,32 @@
+<h1>Roll stats</h1>
+<p></p>
+Character has been created. Next, you need to roll their stats
+<p></p>
+<form action="/newC3" method="POST">
+    <ul>
+        Wisdom
+        <input type="text" name="Wis" value="10" rows="1" cols="1">
+        <p></p>
+        Charisma
+        <input type="text" name="Cha" value="10" rows="1" cols="1">
+        <p></p>
+        Intelligence
+        <input type="text" name="Int" value="10" rows="1" cols="1">
+        <p></p>
+        Constitution
+        <input type="text" name="Con" value="10" rows="1" cols="1">
+        <p></p>
+        Dexterity
+        <input type="text" name="Dex" value="10" rows="1" cols="1">
+        <p></p>
+        Strength
+        <input type="text" name="Str" value="10" rows="1" cols="1">
+        <p></p>
+    </ul>
+    <p></p>
+    Your race gives you these additions to your scores, remember to add them:
+    <p></p>
+    {{score_increase}}
+    <br>
+    <input type="submit" value="Next step">
+</form>
