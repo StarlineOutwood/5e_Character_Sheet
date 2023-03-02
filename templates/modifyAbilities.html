@@ -1,0 +1,20 @@
+<h1>Roll stats</h1>
+<p></p>
+Here are your character's current stats. You can modify them.
+<p></p>
+<form action="/modifySkills/{{character_id}}" method="POST">
+    <ul>
+        {%for stat in stats%}
+        {{stat[0]}}
+        <input type="text" name="{{stat[0]}}" value="{{stat[1]}}" rows="1" cols="1">
+        <br>
+        {%endfor%}
+
+    </ul>
+    <p></p>
+    Your race gives you these additions to your scores, remember to add them:
+    <p></p>
+    {{score_increase}}
+    <br>
+    <input type="submit" value="Save stats">
+</form>

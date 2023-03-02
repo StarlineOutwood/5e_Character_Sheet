@@ -1,9 +1,9 @@
-<form action="/remove", method = "POST">
+<form action="/remove" method="POST">
 Who gets kicked out?
 <br>
 <ul>
     {% for name in names %}
-    <input type="checkbox" name="poistettava" value={{name[0]}}> {{name[0]}}, {{name[1]}}
+    <input type="checkbox" name="poistettava" value={{name[0]}}> {{name[0]}}, {{name[2]}}
     <br>
     {% endfor %}
 </ul>

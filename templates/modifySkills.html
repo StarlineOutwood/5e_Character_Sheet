@@ -1,0 +1,28 @@
+<h1>Proficiencies</h1>
+Modify your proficiencies:
+<p>
+</p>
+According yo your class, you can choose {{n}} proficiencies when you start
+<br>
+You are proficient in these skills at the moment:
+<p>
+</p>
+<li>
+    {%for prof in profs%}
+    {{prof[0]}}
+    <br>
+    {%endfor%}
+</li>
+<form action="/finishModifyingStats/{{character_id}}" method = "POST">
+    You can still choose from these:
+    <p>
+
+    </p>
+    <ul>
+        {%for non_prof in non_profs%}
+        <input type="checkbox" name="skill" value="{{non_prof[0]}}"> {{non_prof[0]}}
+        <br>
+        {%endfor%}
+    </ul>
+    <input type="submit" value="Save proficiencies">
+</form>

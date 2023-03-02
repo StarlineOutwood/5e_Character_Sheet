@@ -1,5 +1,76 @@
 <h1>{{name}}</h1>
-
+<a href="/party">Back to party</a>
+<br>
+<a href="/modifyAbilities/{{character_id}}">Modify abilities</a>
+<br>
+<a href="/modifyCharacter/{{character_id}}">Modify character</a>
+<p></p>
     Race: {{race}}
     <p></p>
     Class: {{character_class}}, level {{level}}
+<p></p>
+<br>
+    {{message}}
+    <table>
+        <tr>
+            <th>HP</th>
+            <td>{{hp}}</td>
+            <td>
+                <form action="/changeHP/{{character_id}}" method="POST">
+                    <input type="text" name="change">
+                    <input type="submit" value="Save deal damage/heal">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <th>Max HP</th>
+            <td>{{max_hp}}</td>
+            <td>      </td>
+        </tr>
+        <tr>
+            <th>Temporary HP</th>
+            <td>{{temp_hp}}</td>
+            <td>
+                <form action="/addTempHP/{{character_id}}" method="POST">
+                    <input type="text" name="change">
+                    <input type="submit" value="Add temporary hp">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <th>Hit dice</th>
+            <td>d{{hit_dice}}</td>
+            <td>       </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>Ability</th>
+            <th>Score</th>
+            <th>Modifier</th>
+        </tr>
+        {%for ability in abilities%}
+        <tr>
+            <td>{{ability[0]}}</td>
+            <td>{{ability[1]}}</td>
+            <td>{{ability[2]}}</td>
+        </tr>
+        {%endfor%}
+        <br>
+    </table>
+<br>
+    <table>
+        <tr>
+            <th>Skill</th>
+            <th>Modifier</th>
+            <th>Prificient</th>
+        </tr>
+        {%for skill in skills%}
+        <tr>
+            <td>{{skill[0]}}</td>
+            <td>{{skill[1]}}</td>
+            <td>{{skill[2]}}</td>
+        </tr>
+        {%endfor%}
+        <br>
+    </table>  

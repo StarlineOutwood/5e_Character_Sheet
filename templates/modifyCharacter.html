@@ -1,0 +1,18 @@
+<h1>Modify character<h1>
+    <br>
+    <form action = "/modifyC/{{character_id}}" method="POST">
+        <p>
+            Change name:
+        </p>
+        <input type = "text" value = "{{info[2]}}" name = "name"> 
+        <p>
+            Change level:
+        </p>
+        <input type = "text" value = "{{info[5]}}" name = "lev"> 
+        <p>
+            Change max_hp
+        </p>
+        <input type = "text" value = "{{info[6]}}" name = "max_hp"> 
+        <br>
+        <input type = "submit" value = "Save">
+    </form>

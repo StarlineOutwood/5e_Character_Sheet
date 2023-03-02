@@ -1,0 +1,26 @@
+<h1>The amazing 5th edition character sheet</h1>
+<br>
+{% if session.username %}
+<p>Welcome, {{ session.username }}!</p>
+<a href="/logout">Log out</a>
+<br>
+<h2>Members of your party</h2>
+<p>
+<ul>
+    {% for hahmo in hahmot %}
+    <li><a href="/hahmo/{{hahmo[0]}}"> {{hahmo[1]}}</a>
+    {% endfor %}
+</ul>
+<a href="/newC1">Add a new memeber</a>
+<a href="/removeC">Remove a memeber</a>
+{% else %}
+<form action="/login" method="POST">
+<p>Username:<br>
+<input type="text" name="username"></p>
+<p>Password:<br>
+<input type="password" name="password"></p>
+<input type="submit" value="Kirjaudu">
+</form>
+<br>
+<a href="/signup">Sign up</a>
+{% endif %}
