@@ -1,6 +1,29 @@
 # 5e_Character_Sheet
 Character sheet based on 5th edition Dungeons and Dragons rules.
 
+INSTALLATION
+1. Clone this reprositio to your computer.
+2. Create .env -file and write into it:
+
+DATABASE_URL=<local adress>
+SECRET_KEY=<secret key (hex16)>
+
+3. Activate virtual environment and install requirements with these commands:
+
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install -r ./requirements.txt
+
+4. Add schemas of the database:
+
+$ psql < Schema.sql
+
+5. Launch the app:
+
+$ flask run
+
+.....
+
 Submission 2
 
 At the moment you are able to remove a character, and see the characters own page. I am currently expanding the character sheet to actually include all the stats, and it is nearly ready. after that, you will have a functioning character sheet. Next i will need to do signing in and out, then it should be functionally ready. After that i can add some nice things here and there, but then at least the basics will be covered
