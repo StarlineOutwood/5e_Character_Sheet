@@ -11,12 +11,16 @@ SECRET_KEY=<secret key (hex16)>
 3. Activate virtual environment and install requirements with these commands:
 
 $ python3 -m venv venv
+  
 $ source venv/bin/activate
+  
 $ pip install -r ./requirements.txt
 
 4. Add schemas of the database:
 
 $ psql < Schema.sql
+                   
+$ psql < Base.sql
 
 5. Launch the app:
 
