@@ -3,12 +3,12 @@ Character sheet based on 5th edition Dungeons and Dragons rules.
 
 INSTALLATION
 1. Clone this reprositio to your computer.
-2. Create .env -file and write into it:
+2. In the folder Create .env -file and write into it:
 
 DATABASE_URL=<local adress>
 SECRET_KEY=<secret key (hex16)>
 
-3. Activate virtual environment and install requirements with these commands:
+3. Install requirements with these commands:
 
 $ python3 -m venv venv
   
