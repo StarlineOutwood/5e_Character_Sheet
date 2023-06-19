@@ -5,7 +5,7 @@ INSTALLATION
 1. Clone this reprositio to your computer.
 2. In the folder Create .env -file and write into it:
 
-DATABASE_URL="<local adress>"
+DATABASE_URL=<local_adress>
 
 SECRET_KEY=<secret key (hex16)>
 
