@@ -3,7 +3,7 @@ Character sheet based on 5th edition Dungeons and Dragons rules.
 
 INSTALLATION
 1. Clone this reprositio to your computer.
-2. In the folder Create .env -file and write into it:
+2. In the folder Create .env -file and write into it (local_address without _ and just with a space:
 
 DATABASE_URL=<local_adress>
 
