@@ -8,7 +8,7 @@ INSTALLATION
 DATABASE_URL=<local adress>
 SECRET_KEY=<secret key (hex16)>
 
-3. Install requirements with these commands:
+3. Install virtual environment and requirements with these commands:
 
 $ python3 -m venv venv
   
@@ -16,7 +16,7 @@ $ source venv/bin/activate
   
 $ pip install -r ./requirements.txt
 
-4. Add schemas of the database:
+4. Launch psql on your computer on anoter terminal. Go back to the original and add schemas of the database:
 
 $ psql < Schema.sql
                    
