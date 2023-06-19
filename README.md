@@ -28,6 +28,17 @@ $ flask run
 
 .....
 
+FINAL SUBMISSION
+
+With this app, you will be able to keep track of the most important stats your character has, like ability scores and skill modifiers. This app can:
+
+1. Create and remove a character on your account
+2. Add and modify ability scores and skill proficiencys
+3. Modify max hitpoints, name etc
+4. Add temporary hitpoints, heal and take damage. When taking damage you only need to write, how much damage you are taking (for example -4). No need to worry about temporary hitpoints, the app calculates that for you
+
+I will most likely continue with this app some time in the future, since I feel like I could improve it quite a lot from where it is now. 
+
 Submission 2
 
 At the moment you are able to remove a character, and see the characters own page. I am currently expanding the character sheet to actually include all the stats, and it is nearly ready. after that, you will have a functioning character sheet. Next i will need to do signing in and out, then it should be functionally ready. After that i can add some nice things here and there, but then at least the basics will be covered
