@@ -6,6 +6,7 @@ INSTALLATION
 2. In the folder Create .env -file and write into it:
 
 DATABASE_URL=<local adress>
+
 SECRET_KEY=<secret key (hex16)>
 
 3. Install virtual environment and requirements with these commands:
