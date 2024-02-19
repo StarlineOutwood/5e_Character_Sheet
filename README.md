@@ -3,12 +3,13 @@ Character sheet based on 5th edition Dungeons and Dragons rules.
 
 INSTALLATION
 1. Clone this reprositio to your computer.
-2. In the folder Create .env -file and write into it:
+2. In the folder Create .env -file and write into it (SPACE and brackets represent a regular space):
 
-DATABASE_URL=<local adress>
+DATABASE_URL=<local(SPACE)adress>
+
 SECRET_KEY=<secret key (hex16)>
 
-3. Install requirements with these commands:
+3. Install virtual environment and requirements with these commands:
 
 $ python3 -m venv venv
   
@@ -16,7 +17,7 @@ $ source venv/bin/activate
   
 $ pip install -r ./requirements.txt
 
-4. Add schemas of the database:
+4. Launch psql on your computer on anoter terminal. Go back to the original and add schemas of the database:
 
 $ psql < Schema.sql
                    
