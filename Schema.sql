@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS races, classes, characters, users, ability_stats, skill_stats
 CREATE TABLE races (id SERIAL PRIMARY KEY, race_name TEXT, speed INTEGER, score_increases TEXT, proficiencies TEXT);
 CREATE TABLE classes (id SERIAL PRIMARY KEY, class_name TEXT, hit_dice INTEGER, armor_prof TEXT, weapons_prof TEXT, tools_prof TEXT, saving_prof TEXT, skills_choose INTEGER, spell_mod TEXT);
 CREATE TABLE characters (id SERIAL PRIMARY KEY, user_id INTEGER, character_name TEXT UNIQUE, race INTEGER, class INTEGER, lev INTEGER, max_hp INTEGER, hp INTEGER, hit_dice INTEGER, temp_hp INTEGER);

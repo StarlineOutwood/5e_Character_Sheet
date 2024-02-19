@@ -8,7 +8,7 @@ from sqlalchemy.sql import text
 
 @app.route("/")
 def index():
-    if session["id"]:
+    if session.get("id"):
         return redirect("/party")
     return render_template("frontPage.html")
 
@@ -44,11 +44,11 @@ def party():
     all = characters.get_characters(id)
     return render_template("frontPage.html", hahmot = all)
 
-@app.route("/newC1")
+@app.route("/newC")
 def newC1():
     classes = default_data.get_classes()
     races = default_data.get_races()
-    return render_template("newC1.html", classes = classes, races = races)
+    return render_template("newC.html", classes = classes, races = races)
 
 @app.route("/modifyAbilities/<int:character_id>")
 def modifyAbilities(character_id):
@@ -125,7 +125,7 @@ def removeC():
 
 @app.route("/remove", methods=["POST"])
 def remove():
-    ids = request.form.getlist["poistettava"]
+    ids = request.form.getlist("poistettava")
     characters.remove(ids)
     return redirect ("/party")
 
